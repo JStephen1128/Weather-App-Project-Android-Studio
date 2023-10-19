@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- The text that displays at the top of the application -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/real_time_weather_app_system"
+        android:textColor="#0B18FF"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- The location where you input your city name -->
+
+        <EditText
+            android:id="@+id/lat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:autofillHints=""
+            android:hint="@string/please_enter_latitude"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/lon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:autofillHints=""
+            android:hint="@string/please_enter_longitude"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+
+        <!-- The button that loads loads the data once the location is typed in -->
+
+        <Button
+            android:id="@+id/Get"
+            android:layout_width="222dp"
+            android:layout_height="wrap_content"
+            android:background="#EEF1EE"
+            android:onClick="getWeatherInfo"
+            android:text="@string/get_weather_info"
+            android:textColor="@color/purple_700" />
+
+        <!-- This is where the weather data is loaded -->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <TextView
+                android:id="@+id/Data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

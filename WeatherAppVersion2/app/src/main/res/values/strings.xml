@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WeatherAppVersion2</string>
+    <string name="get_weather_info">Get Weather Info</string>
+    <string name="please_enter_city_name">Please enter city name!</string>
+    <string name="real_time_weather_app_system">REAL TIME WEATHER APP SYSTEM</string>
+    <string name="please_enter_latitude">Please enter latitude</string>
+    <string name="please_enter_longitude">Please enter longitude</string>
+    <string name="error">Please enter a location!</string>
+</resources>
